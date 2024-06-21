@@ -1,0 +1,23 @@
+spring:
+  servlet: 
+   multipart: 
+    max-file-size: 50MB
+  datasource:
+   hikari:
+    auto-commit: false
+   url: jdbc:postgresql://localhost:5432/scholarhub
+   username: postgres
+   password: 2003
+  jpa:
+   hibernate:
+      ddl-auto: update
+   properties:
+     hibernate:
+       dialect: org.hibernate.dialect.PostgreSQLDialect
+       ddl-auto: create
+#       ['allow_update_outside_transaction']: true
+       
+#    spring.datasource..auto-commit=false
+
+#spring.
+#spring.jpa.properties.hibernate.allow_update_outside_transaction
